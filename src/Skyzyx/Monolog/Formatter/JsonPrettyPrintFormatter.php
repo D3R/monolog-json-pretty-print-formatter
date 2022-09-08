@@ -33,7 +33,7 @@ class JsonPrettyPrintFormatter extends JsonFormatter
     /**
      * {@inheritdoc}
      */
-    public function format(array $record)
+    public function format(array $record): string
     {
         return json_encode($record, JSON_PRETTY_PRINT) . PHP_EOL;
     }
